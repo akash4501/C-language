@@ -1,0 +1,35 @@
+#include <stdio.h>
+
+int main(){
+    int l, m, n, numRows=6;
+    for (l = 1; l <= numRows; l++){
+        for (m = 1; m < l; m++){
+            printf(" ");
+        }
+        for (n = l; n <= numRows; n++){
+            if (l == 1 || n == l || n == numRows){
+                printf("* ");
+            }
+            else{
+                printf("  ");
+            }
+        }
+        printf("\n");
+    }
+    
+    for (l = numRows - 1; l >= 1; l--){
+        for (m = 1; m < l; m++){
+            printf(" ");
+        }
+        for (n = l; n <= numRows; n++){
+            if (l == 1 || n == l || n == numRows){
+                printf("* ");
+            }
+            else{
+                printf("  ");
+            }
+        }
+        printf("\n");
+    }
+    return 0;
+}
