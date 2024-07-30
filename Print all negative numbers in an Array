@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+    
+    int arr[100] , N;
+    printf("Enter Array Size : ");
+    scanf("%d",&N);
+    
+    for (int i=0; i<N ; i++){
+        printf("Enter elements at index %d : ",i);
+        scanf("%d",&arr[i]);
+    }
+    
+    printf("\nNegetive elements are : ");
+    
+    for(int i=0 ; i<N ; i++){
+        if(arr[i] < 0){
+            printf("%d ",arr[i]);
+        }
+    }
+
+    return 0;
+}
